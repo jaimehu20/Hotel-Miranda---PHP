@@ -135,6 +135,10 @@ background: #BDAC8D; }
     display: none !important;
   }
 
+  .swiper--about {
+    display: none !important;
+  }
+
   .swiper-slide div {
     display: none; }
 
