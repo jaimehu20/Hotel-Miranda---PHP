@@ -7,6 +7,14 @@ body {
   min-width: 320px;
   margin: 0;
   background: #222222; }
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logoLink {
+  display: contents;
+}
 
 .slogan {
   margin-top: 0;
@@ -93,18 +101,21 @@ background: #BDAC8D; }
   height: 300px;
 }
 
-
-
-
-
-
-
 .swiper--about {
-  padding-bottom: 1em !important; }
+  padding-bottom: 1em !important;
+  width: 94%; }
 
-.swiper--features {
+.swiper-wrapper--about {
+  height: 76% !important;
+}
+
+.swiper--funfacts {
   margin-left: 1em !important;
   margin-right: 1em !important; }
+
+.swiper-wrapper--funfacts {
+  height: 326px !important;
+}
 
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 6px)) !important;
@@ -142,6 +153,13 @@ background: #BDAC8D; }
     max-width: 17em; }
 
   .swiper--mobile {
+    display: none !important; }
+
+  .swiper--about {
+    display: none !important;
+  }
+
+  .swiper--funfacts {
     display: none !important;
   }
 

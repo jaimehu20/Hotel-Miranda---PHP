@@ -64,6 +64,26 @@ const foodSwiper = new Swiper('.swiper--food', {
 
 });
 
+const aboutSwiper = new Swiper('.swiper--about', {
+  // Optional parameters
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+});
+
+const funfactsSwiper = new Swiper('.swiper--funfacts', {
+  // Optional parameters
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+});
+
 
 
 

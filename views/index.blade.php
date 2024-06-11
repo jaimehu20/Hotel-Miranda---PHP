@@ -27,7 +27,7 @@
                 </div>
         </div>
         <div class="navBar__menu">
-            <p>About Us</p>
+            <p><a href="./about.php">About Us</a></p>
             <p>Rooms</p>
             <p>Offers</p>
             <p>Contact</p>
