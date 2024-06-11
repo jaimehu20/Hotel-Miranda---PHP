@@ -1,10 +1,6 @@
 <?php
-require_once('BladeOne');
-use eftec\bladeone\BladeOne;
+require_once('./setup.php');
 
-$views = __DIR__ . '/views';
-$cache = __DIR__ . '/cache';
-$blade = new BladeOne($views,$cache,BladeOne::MODE_DEBUG);
-echo $blade->run("hello",array("variable1"=>"value1"));
+echo $blade->run("index", ["variable1" => "value1"]);
 
 ?>
