@@ -31,12 +31,8 @@
             </a>
         </div>
         <div class="navBar__menu">
-            <p>
-                About Us
-            </p>
-            <p>
-                Rooms
-            </p>
+            <p><a href="./about.php">About Us</a></p>
+            <p><a href="./rooms.php">Rooms</a></p>
             <p>
                 Offers
             </p>
