@@ -931,6 +931,7 @@ background: #BDAC8D; }
   display: block; }
 
 .offerList {
+  background: #ffffff;
   padding-bottom: 2em; }
   .offerList__offerContainer {
     padding-top: 3em; }
@@ -988,6 +989,92 @@ background: #BDAC8D; }
     color: #ffffff; }
   .popularRooms img {
     width: 100%; }
+
+@media only screen and (min-width: 1000px) {
+  .offerList__offerContainer__items img {
+    width: 810px;
+    height: 500px;
+  }
+  .offerList__offerContainer__items__before {
+    right: 25em;
+  }
+  .offerList__offerContainer__items__after {
+    right: 19em;
+  }
+  .aboutUs__description__title--mod3 {
+    width: 648px;
+    margin: 0 auto;
+    padding-top: 30px;
+    transform: translateY(-52px);
+    background: #FFFFFF;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .services__description--paddingAdd {
+    width: 648px;
+    margin: 0 auto;
+    max-width: none;
+    padding-left: 25px;
+    transform: translateY(-62px);
+  }
+  .aboutUs__rooms__pricing__description--justify {
+    width: 19%;
+    margin: 0 auto;
+    padding-right: 275px;
+    transform: translateY(-30px);
+  }
+  .amenities__list--center {
+    width: 288px;
+    margin: 0 auto;
+    padding-left: 410px;
+    transform: translateY(-190px);
+  }
+  .amenities__list__1 div {
+    padding-bottom: 0;
+  }
+  .aboutUs__description__button--mod {
+    margin-bottom: 0px;
+    margin-left: 658px;
+    transform: translateY(-263px);
+  }
+  .offerList__offerContainer__items__before {
+    transform: translateY(46px);
+    right: 630px;
+    z-index: 1;
+  }
+  .offerList__offerContainer__items__after {
+    transform: translateY(46px);
+    right: 630px;
+    z-index: 1;
+  }
+  .roomList__container--mod {
+    background: #222222;
+  }
+  .roomList__icons {
+    z-index: 1;
+  }
+  .aboutUs__rooms__pricing__title--mod {
+    width: 336px;
+    padding-top: 54px;
+    transform: translateY(-40px);
+    background: #ffffff;
+  }
+  .aboutUs__rooms__pricing__description--mod {
+    width: 336px;
+    padding-top: 20px;
+    transform: translateY(-41px);
+    background: #ffffff;
+  }
+  .roomList__price {
+    width: 336px;
+    padding-top: 20px;
+    transform: translateY(-42px);
+    background: #ffffff;
+  }
+  .popularRooms img {
+    width: auto;
+  }
+       }
 
 .formData {
   display: flex;

@@ -33,9 +33,7 @@
         <div class="navBar__menu">
             <p><a href="./about.php">About Us</a></p>
             <p><a href="./rooms.php">Rooms</a></p>
-            <p>
-                Offers
-            </p>
+            <p><a href="./offers.php">Offers</a></p>
             <p>
                 Contact
             </p>
