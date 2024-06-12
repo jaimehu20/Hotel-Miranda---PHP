@@ -32,9 +32,7 @@
             <p><a href="./about.php">About Us</a></p>
             <p><a href="./rooms.php">Rooms</a></p>
             <p><a href="./offers.php">Offers</a></p>
-            <p>
-                Contact
-            </p>
+            <p><a href="./contact.php">Contact</a></p>
         </div>
         <div class="navBar__logo__icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
