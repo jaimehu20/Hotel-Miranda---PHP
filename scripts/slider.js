@@ -11,7 +11,7 @@ const roomSwiper = new Swiper('.swiper1', {
         prevEl: '.swiper-button-prev',
       },
     });
-const roomSwiperDesktop = new Swiper('.swiper .swiper1--desktop', {
+const roomSwiperDesktop = new Swiper('.swiper1--desktop', {
       // Optional parameters
       loop: true,
       slidesPerView: 3,

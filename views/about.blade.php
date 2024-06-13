@@ -17,10 +17,10 @@
         We Make Your Feel Comfortable
     </p>
     <nav class="navBar">
-         <svg class="navBar__burguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+         <svg class="navBar-burguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
         </svg>
-        <div class="navBar__logo">
+        <div class="navBar-logo">
             <a class="logoLink" href="/index.php">
                 <div>
                     <p>H</p>
@@ -31,7 +31,7 @@
                 </div>
             </a>
         </div>
-        <div class="navBar__menu">
+        <div class="navBar-menu">
             <p><a href="./about.php">About Us</a></p>
             <p><a href="./rooms.php">Rooms</a></p>
             <p><a href="./offers.php">Offers</a></p>
@@ -39,7 +39,7 @@
                 Contact
             </p>
         </div>
-        <div class="navBar__logo__icons">
+        <div class="navBar-icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_29_1118)">
                         <path d="M16.2479 11.5229C17.1564 10.5107 17.7143 9.17786 17.7143 7.71429C17.7143 4.56357 15.1507 2 12 2C8.84929 2 6.28571 4.56357 6.28571 7.71429C6.28571 10.865 8.84929 13.4286 12 13.4286C13.1107 13.4286 14.145 13.105 15.0236 12.5543C18.1307 13.725 20.27 16.5686 20.5421 19.8571H3.45857C3.64357 17.6436 4.68214 15.5793 6.37143 14.1064C6.66929 13.8471 6.7 13.3964 6.44071 13.0986C6.18214 12.8014 5.73071 12.77 5.43286 13.0293C3.25071 14.9307 2 17.6793 2 20.5714C2 20.9664 2.32 21.2857 2.71429 21.2857H21.2857C21.6807 21.2857 22 20.9664 22 20.5714C22 16.6529 19.7286 13.1536 16.2479 11.5229ZM7.71429 7.71429C7.71429 5.35071 9.63643 3.42857 12 3.42857C14.3636 3.42857 16.2857 5.35071 16.2857 7.71429C16.2857 10.0779 14.3636 12 12 12C9.63643 12 7.71429 10.0779 7.71429 7.71429Z" fill="#111111"/>
@@ -55,7 +55,7 @@
                 </svg> 
         </div>
     </nav>
-    <header class="header header--mod">
+    <header class="aboutHeader">
         <p class="header__title header__title--smaller">
             THE ULTIMATE LUXURY
         </p>

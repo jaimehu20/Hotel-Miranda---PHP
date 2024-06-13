@@ -31,8 +31,24 @@
     right: 0 !important;
     top: var(--swiper-navigation-top-offset, 456%) !important; }
   .swiper--mobile {
-    height: 320px !important;
+    height: 423px !important;
     padding-bottom: 1em !important; }
+    .swiper-mobile-title {
+      font-family: 'Old Standard TT';
+      font-size: 1.8em !important;
+      padding-top: 1em;
+      padding-bottom: 0.5em;
+      padding-left: 1.2em;
+      margin-bottom: 0 !important;
+      text-align: left !important; }
+    .swiper-mobile-description {
+      font-family: 'Archivo';
+      font-size: 0.875em;
+      color: #777777;
+      text-align: left;
+      line-height: 2em;
+      width: 62%;
+      padding-left: 2.8em; }
   .swiper-icons {
     display: flex;
     gap: 1em;
@@ -41,6 +57,10 @@
     margin: 0 auto;
     padding: 0.5em;
     transform: translateY(14px); }
+  .swiper-icons img {
+    width: 15px;
+    height: auto;
+  }
   .swiper-button-prev--menu {
     left: var(--swiper-navigation-sides-offset, 293px) !important;
     top: var(--swiper-navigation-top-offset, 92%) !important;
@@ -58,8 +78,6 @@
     width: 80%;
     height: 300px;
     padding-bottom: 0 !important; }
-  .food {
-    height: 300px;} 
   .swiper--about {
     padding-bottom: 1em !important;
     width: 94%; } 
@@ -81,8 +99,14 @@
 @media only screen and (min-width: 1000px) {
     .swiper1 {
       display: none !important; }
+    .swiper1--desktop {
+      display: block !important;
+    }
     .swiper--mobile {
       display: none !important;}
+    .swiper-icons {
+      width: 50% !important;
+    }
     .swiper--about {
       display: none !important;}
     .swiper-slide div {
@@ -93,7 +117,8 @@
       transform: translateY(-36px) !important;
       left: 0 !important; }
       .swiper-slide-active div {
-        display: flex !important;}
+        max-width: 22em;
+        display: block !important;}
     .swiper--funfacts {
       display: none !important;}
     .slogan {

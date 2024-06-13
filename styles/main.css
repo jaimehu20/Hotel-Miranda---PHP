@@ -28,31 +28,31 @@ a {
   display: none; }
 
 
-
+/* NAVBAR*/
 .navBar {
     display: flex;
     gap: 2em;
     box-shadow: 0px 3px 6px 0px #0000004A;
     background: #ffffff;
     align-items: center; }
-    .navBar__burguer {
+    .navBar-burguer {
       width: 2em;
       padding-left: 1em;
       cursor: pointer; }
-    .navBar__logo {
+    .navBar-logo {
       display: flex;
       gap: 1em;
       align-items: center; }
-      .navBar__logo div:first-child {
+      .navBar-logo div:first-child {
         font-weight: bold;
         font-family: 'Archivo'; }
-      .navBar__logo div:last-child p {
+      .navBar-logo div:last-child p {
         line-height: 0;
         font-size: 0.8em;
         font-family: 'Archivo'; }
-      .navBar__logo div:last-child p:last-child {
+      .navBar-logo div:last-child p:last-child {
         font-weight: bold; }
-      .navBar__logo__icons {
+      .navBar-icons {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -60,7 +60,7 @@ a {
         gap: 1em;
         padding-right: 1em;
         cursor: pointer; }
-    .navBar__menu {
+    .navBar-menu {
       display: none; }
 
 @media only screen and (min-width: 1000px) {
@@ -70,43 +70,46 @@ a {
     gap: 3em;
     border-top: 10px solid #ffffff;
     border-bottom: 10px solid #ffffff; }
-    .navBar__burguer {
+    .navBar-burguer {
       display: none; }
-    .navBar__logo {
+    .navBar-logo {
       margin-left: 1.2em; }
-      .navBar__logo__icons {
+      .navBar-logo__icons {
         margin-right: 1.5em; }
-        .navBar__logo__icons svg {
+        .navBar-logo__icons svg {
           border: 1px solid gray;
           padding: 0.5em; }
-    .navBar__menu {
+    .navBar-menu {
       display: flex;
       gap: 1em; }
-      .navBar__menu p {
+      .navBar-menu p {
         font-family: 'Archivo';
         font-weight: 600;
         font-size: 0.7em;
         width: 5em; } }
 
 
+/* HEADER */
 .header {
   background: #333333;
   color: #ffffff;
   padding-bottom: 4em; }
-  .header--mod {
+.aboutHeader {
+    background: #333333;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     padding-bottom: 0; }
   .header--marginLess {
     margin-bottom: 0; }
-  .header__title {
+  .header-title {
     margin: 0;
     padding-top: 3em;
     padding-left: 1em;
     font-family: 'Archivo';
     font-weight: 700;
     width: 12em; }
-    .header__title--mod {
+    .header-title--index {
       font-family: "Old Standard TT";
       font-weight: 100;
       font-size: 3.5em;
@@ -144,7 +147,7 @@ a {
       padding-left: 0.1em;
       color: #BEAD8E;
       cursor: pointer; }
-  .header__button {
+  .header-button {
     color: #ffffff;
     background: #BEAD8E;
     border: 0;
@@ -158,7 +161,7 @@ a {
     padding-left: 5em;
     display: block;
     cursor: pointer; }
-    .header__button--mod {
+    .header-button--mod {
       background: #333333;
       border: 2px solid #FFFFFF54;
       margin-top: 1.8em; }
@@ -187,17 +190,17 @@ a {
     .header__options {
       margin-right: 9em; } }
 
-
+/* DATES SELECTOR */
 .dates {
   background: #222222;
   color: #ffffff;
   font-family: 'Roboto';
   padding-bottom: 2em; }
-  .dates__text {
+  .dates-text {
     margin-top: 0;
     padding-top: 2em;
     padding-left: 1.5em; }
-  .dates__selector {
+  .dates-selector {
     margin-left: 1.5em;
     background: none;
     color: gray;
@@ -205,9 +208,9 @@ a {
     border-left: 0;
     border-right: 0;
     padding-right: 2em; }
-    .dates__selector--mod {
+    .dates-selector--mod {
       margin-bottom: 3em; }
-  .dates__button {
+  .dates-button {
     background: #BEAD8E;
     color: #ffffff;
     font-family: 'Archivo';
@@ -217,7 +220,7 @@ a {
     margin-left: 1.5em;
     border: none;
     cursor: pointer; }
-    .dates__button--mod {
+    .dates-button--mod {
       margin-top: 2em;
       margin-bottom: 4em;
       width: 78%;
@@ -231,25 +234,26 @@ a {
     padding-bottom: 2.5em;
     justify-content: center;
     font-weight: 700; }
-    .dates__text {
+    .dates-text {
       padding-top: 0; }
-    .dates__selector {
+    .dates-selector {
       padding-right: 10em; }
-      .dates__selector--mod {
+    .dates-selector--mod {
         margin-bottom: 0; }
-    .dates__button {
+    .dates-button {
       margin-left: 5.5em; } }
 
 
+/* ABOUT US */
 .aboutUs {
   margin-top: 4em;
   background: #ffffff; }
-  .aboutUs__description {
+  .aboutUs-description {
     display: flex;
     flex-direction: column;
     padding-top: 1.4em;
     background: #F9F9F9; }
-    .aboutUs__description__title {
+    .aboutUs-title {
       padding-left: 1.2em;
       padding-bottom: 1em;
       letter-spacing: 0.175em;
@@ -266,7 +270,7 @@ a {
         padding-left: 1em; }
       .aboutUs__description__title--mod3 {
         padding-left: 1.5em; }
-    .aboutUs__description h1 {
+    .aboutUs-description h1 {
       font-family: 'Old Standard TT';
       font-size: 3.5em;
       font-weight: 100;
@@ -274,7 +278,7 @@ a {
       margin-bottom: 0;
       padding-left: 0.3em;
       max-width: 6em; }
-    .aboutUs__description p:last-of-type {
+    .aboutUs-description p:last-of-type {
       font-family: 'Archivo';
       color: #777777;
       font-weight: 300;
@@ -283,7 +287,7 @@ a {
       width: 81%;
       line-height: 1.5em;
       max-width: 24em; }
-    .aboutUs__description__button {
+    .aboutUs-description button {
       background: #BEAD8E;
       color: #ffffff;
       font-family: 'Archivo';
@@ -302,19 +306,25 @@ a {
         margin-left: 0; }
       .aboutUs__description__button--disabled {
         display: none; }
-    .aboutUs__description img {
+    .aboutUs-description img {
       width: 72%;
       height: 18em;
       align-self: center; }
-  .aboutUs__team {
+  .aboutUs-team {
     text-align: center;
     padding-top: 3em; }
-    .aboutUs__team svg:first-of-type {
-      position: relative; }
-    .aboutUs__team svg:last-of-type {
+  .aboutUs-team div:first-of-type {
+    img:first-child {
       position: relative;
-      right: 5em; }
-    .aboutUs__team p:first-of-type {
+      width: auto;
+      height: auto; }
+    img:last-of-type {
+      position: relative;
+      right: 5em;
+      width: auto;
+      height: auto; }
+  }  
+    .aboutUs-team p:first-of-type {
       font-family: 'Old Standard TT';
       font-weight: 500;
       font-size: 1.6em;
@@ -322,51 +332,54 @@ a {
       padding-top: 1em;
       margin: 0;
       position: relative; }
-    .aboutUs__team p:last-of-type {
+    .aboutUs-team p:last-of-type {
       font-family: 'Roboto';
       font-size: 0.8em;
       width: 50%;
       text-align: center;
       padding-bottom: 6em;
       margin: 0 auto; }
-    .aboutUs__team img {
+    .aboutUs-team img {
       width: 72%;
       height: 18em; }
-    .aboutUs__team img:last-of-type {
+    .aboutUs-team img:nth-child(3){
       display: none; }
-    .aboutUs__team__room {
+    .aboutUs-team-room {
       width: 72%;
       background: #222222;
       margin: 0 auto; }
-      .aboutUs__team__room svg:first-of-type {
+      .aboutUs-team-room img {
+        position: relative;
         padding-top: 3em;
-        right: 0; }
-      .aboutUs__team__room p:first-of-type {
+        right: 0;
+        width: auto;
+        height: auto; }
+      .aboutUs-team-room p:first-of-type {
         color: #ffffff;
         font-size: 1.5em;
         margin-bottom: 0; }
-      .aboutUs__team__room p:last-of-type {
+      .aboutUs-team-room p:last-of-type {
         font-family: 'Roboto';
         text-align: center;
         color: #ffffff;
         font-size: 0.8em;
         font-weight: 100;
         padding-bottom: 3em; }
-  .aboutUs__rooms {
+  .aboutUs-rooms {
     text-align: center;
     padding-top: 3em; }
-    .aboutUs__rooms h2 {
+    .aboutUs-rooms h2 {
       font-family: 'Archivo';
       color: #777777;
       font-size: 1em;
       letter-spacing: 0.2em; }
-    .aboutUs__rooms h1 {
+    .aboutUs-rooms h1 {
       font-family: 'Old Standard TT';
       font-weight: 100;
       margin-top: 0;
       font-size: 3em;
       text-align: center; }
-    .aboutUs__rooms__pricing {
+    .aboutUs-rooms-pricing {
       width: 80%;
       background: #ffffff;
       text-align: center;
@@ -374,7 +387,7 @@ a {
       margin: 0 auto; }
       .aboutUs__rooms__pricing--mod {
         transform: translateY(-20px); }
-      .aboutUs__rooms__pricing__title {
+      .aboutUs-rooms-pricing p:first-of-type {
         font-family: 'Old Standard TT';
         font-size: 1.5em;
         margin-bottom: 0;
@@ -385,7 +398,7 @@ a {
           margin-top: 0; }
         .aboutUs__rooms__pricing__title--mod2 {
           padding-top: 0; }
-      .aboutUs__rooms__pricing__description {
+      .aboutUs-rooms-pricing p:nth-child(2) {
         font-family: 'Roboto';
         font-size: 0.8em;
         color: #777777;
@@ -422,7 +435,7 @@ a {
           padding-left: 1.5em;
           padding-top: 1em;
           width: 86%; }
-      .aboutUs__rooms__pricing__price {
+      .aboutUs-rooms-pricing p:last-of-type {
         font-family: 'Archivo';
         color: #BEAD8E;
         font-size: 1.8em;
@@ -440,56 +453,63 @@ a {
     flex-direction: column;
     margin-top: 0;
     padding-top: 6em; }
-    .aboutUs__container {
+    .aboutUs-container {
       display: flex;
       flex-direction: row-reverse; }
-    .aboutUs__description {
+    .aboutUs-description {
       display: block;
       width: 50%; }
-      .aboutUs__description p:last-of-type {
+      .aboutUs-description p:last-of-type {
         font-size: 0.875em; }
-      .aboutUs__description img {
+      .aboutUs-description img {
         display: none; }
-      .aboutUs__description__button {
+      .aboutUs-description button {
         width: 35%;
         margin-left: 3.3em; }
       .aboutUs__description__title--mod {
         padding-left: 2.5em; }
-    .aboutUs__team {
+    .aboutUs-team {
       display: grid;
       grid-template-columns: auto auto;
       margin-right: 1em;
       width: 50%;
       max-width: 31em;
       margin-left: 4em; }
-      .aboutUs__team img:first-of-type {
+      .aboutUs-team img:first-of-type {
         margin-left: 0.5em; }
-      .aboutUs__team img:last-of-type {
+      .aboutUs-team img:last-of-type {
         margin-right: 0.5em;
         display: block; }
-      .aboutUs__team__strong {
+      .aboutUs-team div:first-of-type {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; }
-      .aboutUs__team svg:first-of-type {
-        position: absolute;
-        width: 6em; }
-      .aboutUs__team svg:last-of-type {
-        position: static; }
-      .aboutUs__team p:last-of-type {
+        justify-content: center;
+        img:first-of-type {
+          position: absolute;
+          width: 6em; }
+        img:last-of-type {
+          position: static; }
+         }
+      .aboutUs-team p:last-of-type {
         padding-bottom: 0; }
-      .aboutUs__team img {
+      .aboutUs-team img {
         height: 15em;
         object-fit: contain;
         width: auto; }
-      .aboutUs__team__room {
+      .aboutUs-team-room {
         width: auto;
         margin-left: 0.5em;
         margin-top: 1.5em;
-        padding-bottom: 1.5em; } }
+        padding-bottom: 1.5em; }
+      }
+      .aboutUs-team-room img {
+        width: 70px;
+        height: auto;
+        padding-left: 70px;
+      }
 
-
+/* SERVICES */
 .services {
   padding-bottom: 5em;
   padding-top: 4em;
@@ -562,7 +582,7 @@ a {
     .services div:last-of-type div:nth-child(2) {
       display: inline-flex; } }
 
-
+/* RESTAURANT */
 .restaurant {
   background: #ffffff; }
   .restaurant img {
@@ -596,7 +616,7 @@ a {
     .restaurant__description {
       padding-left: 2.5em; } }
 
-
+/* FUNFACTS */
 .funFacts {
   padding-top: 2em;
   background: #ffffff; }
@@ -641,6 +661,8 @@ a {
   .funFacts__container {
     gap: 0; } }
 
+
+/* ROOMLIST */
 .roomList {
   background: #ffffff;
   padding-top: 2em; }
@@ -692,7 +714,8 @@ a {
     grid-column: 1 / span 3;
     gap: 92px; 
   } }
-  
+
+/* ROOM DETAILS */
 .roomDetails {
   padding-left: 1em; }
   .roomDetails img {
@@ -1024,6 +1047,22 @@ a {
 
 .introVideo {
   background: #222222; }
+  .introVideo-container {
+    button {
+      background: #BEAD8E;
+      color: #ffffff;
+      font-family: 'Archivo';
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      padding: 1.5em;
+      margin-bottom: 4em;
+      margin-left: 1.5em;
+      border: none;
+      max-width: 20em;
+      cursor: pointer;
+      width: 60%;
+    }
+  }
   .introVideo p:nth-child(1) {
     font-family: 'Archivo';
     font-weight: 500;
@@ -1048,7 +1087,7 @@ a {
     padding-left: 1.5em;
     padding-right: 4em;
     padding-bottom: 2em; }
-  .introVideo__video {
+  .introVideo div:last-child {
     background: #222222; }
   .introVideo video {
     display: block;
@@ -1073,23 +1112,23 @@ a {
       padding-left: 3.5em;
       width: 34em;
       padding-right: 8em; }
-    .introVideo__container {
+    .introVideo-container {
       width: 70%; }
-    .introVideo__video {
+    .introVideo div:last-child {
       background: #AD9D82; }
     .introVideo video {
       padding-top: 6em; } }
 
 
 @media only screen and (min-width: 1250px) {
-  .introVideo__container {
+  .introVideo-container {
     margin-left: 6em; }
   .introVideo video {
     transform: translateX(-113px); } }
 
 
 @media only screen and (min-width: 1500px) {
-  .introVideo__container {
+  .introVideo-container {
     margin-left: 12em; }
   .introVideo video {
     transform: translateX(-260px); } }
@@ -1101,7 +1140,7 @@ a {
   .features--dark {
     background: #222222;
     padding-bottom: 3em; }
-  .features__title {
+  .features p:first-child {
     font-family: 'Archivo';
     font-weight: 600;
     color: #777777;
@@ -1110,7 +1149,7 @@ a {
     padding-top: 2.5em; }
     .features__title--dark {
       color: #ffffff; }
-  .features__mainTitle {
+  .features p:nth-child(2) {
     font-family: 'Old Standard TT';
     font-weight: 100;
     margin-top: 0;
@@ -1119,26 +1158,27 @@ a {
     text-align: center; }
     .features__mainTitle--dark {
       color: #ffffff; }
-  .features__container {
+  .features-container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     .features__container--dark {
       background: #292929;
       margin-top: 2em; }
-    .features__container svg {
+    .features-container img {
       padding-left: 2em;
       align-self: end;
       width: 6em;
       height: 8em;
       padding-top: 5em; }
-    .features__container__number {
+    .features-container h1 {
       font-family: 'Archivo';
       font-weight: 700;
       font-size: 10em;
       margin-top: 0;
       margin-bottom: 0;
-      padding-right: 0.1em; }
+      padding-right: 0.1em;
+      color: #2222220A; }
       .features__container__number--light {
         color: #2222220A; }
       .features__container__number--dark {
@@ -1155,26 +1195,10 @@ a {
         position: absolute;
         top: 4.3em;
         left: 1em; }
-  .features__subTitle {
-    font-family: 'Old Standard TT';
-    font-size: 1.8em;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    padding-left: 1.2em;
-    margin-bottom: 0;
-    text-align: left; }
     .features__subTitle--mod {
       margin-top: 0;
       background: #292929;
       color: #ffffff; }
-  .features__description {
-    font-family: 'Archivo';
-    font-size: 0.875em;
-    color: #777777;
-    text-align: left;
-    line-height: 2em;
-    width: 62%;
-    padding-left: 2.8em; }
     .features__description--mod {
       background: #292929;
       color: #ffffff;
@@ -1226,22 +1250,15 @@ a {
   .features__container__number {
     font-size: 6em; } }
 
-
+/* MENU */
 .menu {
   display: flex;
   flex-direction: column;
   background: #ffffff; }
-  .menu svg {
+  .menu img:first-of-type {
     align-self: flex-end;
     width: 6em; }
-  .menu__title {
-    font-family: 'Archivo';
-    font-weight: 600;
-    color: #777777;
-    font-size: 1em;
-    letter-spacing: 0.2em;
-    padding-left: 1.4em; }
-  .menu__mainTitle {
+  .menu-title {
     font-family: 'Old Standard TT';
     font-weight: 100;
     font-size: 3em;
@@ -1249,48 +1266,49 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0.5em; }
-  .menu__table {
+  .menu-table {
     display: grid;
     grid-template-columns: auto auto; }
-    .menu__table--2 {
+    .menu-table--2 {
       display: none; }
-    .menu__table--3 {
+    .menu-table--3 {
       display: none; }
-    .menu__table__item {
+    .menu-table-item {
       padding-right: 2em;
       padding-bottom: 1em; }
-      .menu__table__item img {
-        width: 8em;
-        height: 8em;
+      .menu-table-item img {
+        width: 8em !important;
+        height: 8em !important;
         padding-left: 1em;
         object-fit: cover; }
-      .menu__table__item p:nth-child(1) {
+      .menu-table-item p:nth-child(1) {
         font-family: 'Old Standard TT';
         font-size: 1.5em;
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 0.4em; }
-      .menu__table__item p:nth-child(2) {
+      .menu-table-item p:nth-child(2) {
         font-family: 'Roboto';
         font-size: 0.8em; }
-  .menu__food {
+  .menu-food {
     margin-bottom: 2em;
     text-align: center; }
-
-
-
-
-.menu__table__item p:nth-child(2) {
-  padding-left: 14px; } 
+  .food {
+    height: 300px;
+    width: auto !important;} 
 
 
 .achievements {
   background: #ffffff;
   text-align: center;
   padding-bottom: 1em; }
-  .achievements__item {
+  .achievements-item {
     padding-top: 4em; }
-    .achievements__item__text {
+    .achievements-item img {
+      width: 68px;
+      height: auto;
+    }
+    .achievements-item p:first-of-type {
       font-family: 'Roboto';
       color: #ffffff;
       font-size: 4.3em;
@@ -1298,14 +1316,14 @@ a {
       margin-top: 0;
       margin-bottom: 0;
       padding-left: 0.2em; }
-    .achievements__item__subText {
+    .achievements-item p:last-of-type {
       font-family: 'Roboto';
       font-weight: 500;
       color: gray;
       margin-top: 0;
       margin-bottom: 0;
       padding-bottom: 2em; }
-  .achievements__container {
+  .achievements-container {
     background: #222222; }
 
 @media only screen and (min-width: 1000px) {
