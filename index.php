@@ -1,6 +1,7 @@
 <?php
 require_once('./setup.php');
-dbConnection();
-echo $blade->run("index", ["variable1" => "value1"]);
+require_once('./getRooms.php');
+
+echo $blade->run("index", ["rooms" => $rooms]);  
 
 ?>

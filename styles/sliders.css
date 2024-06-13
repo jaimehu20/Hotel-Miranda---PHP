@@ -5,17 +5,7 @@
     .swiper1 img {
       width: 100%;
       height: 16em; }
-  
-  .swiper1--desktop {
-    display: none !important;
-    max-width: 100%;
-    padding-top: 2em !important;
-    padding-bottom: 17em !important; }
-    .swiper1--desktop img {
-      width: 100%;
-      height: 50vh;
-      max-height: 350px;
-      object-fit: cover; }  
+   
   .swiper-button-prev {
     color: black !important;
     height: 15px !important;

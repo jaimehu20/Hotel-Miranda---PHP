@@ -10,23 +10,12 @@ const roomSwiper = new Swiper('.swiper1', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    });
-const roomSwiperDesktop = new Swiper('.swiper1--desktop', {
-      // Optional parameters
-      loop: true,
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      breakpoint: {
+        700: {
+          slidesPerView: 2,
+          slidesCentered: true
+        }
+      }
     });
 
 const featureSwiper = new Swiper('.swiper--mobile', {

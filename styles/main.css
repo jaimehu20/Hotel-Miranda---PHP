@@ -14,6 +14,14 @@ a {
 
 .logoLink {
   display: contents;
+  all: initial;
+  div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 13px;
+    padding-top: 7px;
+  }
 }
 
 .slogan {
@@ -45,12 +53,18 @@ a {
       align-items: center; }
       .navBar-logo div:first-child {
         font-weight: bold;
-        font-family: 'Archivo'; }
+        font-family: 'Archivo';
+        margin-right: 10px;
+        p {
+          all:unset;
+        } }
       .navBar-logo div:last-child p {
+        all: initial;
         line-height: 0;
         font-size: 0.8em;
         font-family: 'Archivo'; }
       .navBar-logo div:last-child p:last-child {
+        all: initial;
         font-weight: bold; }
       .navBar-icons {
         display: flex;
@@ -94,6 +108,62 @@ a {
   background: #333333;
   color: #ffffff;
   padding-bottom: 4em; }
+  
+.header--rooms {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  p:first-of-type {
+    font-family: 'Archivo';
+    font-weight: 500;
+    width: 100%;
+    letter-spacing: 0.1em;
+    padding-top: 4em;
+    padding-left: 1em;
+    margin: 0;
+    font-size: 16px;
+  }
+  p:last-of-type {
+    font-family: "Old Standard TT";
+    font-weight: 100;
+    font-size: 3.5em;
+    padding: 0.2em 0 0.7em 0.3em;
+    margin: 0;
+    width: 6em;
+    color: #ffffff;
+  }
+}
+
+.header-options {
+  align-self: flex-end;
+  background: white;
+  width: 7em;
+  margin-right: 1em;
+  font-family: 'Archivo';
+  font-weight: 600;
+  padding-left: 1.6em;
+  padding-right: 1.2em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  p:first-of-type {
+    display: inline;
+    color: black;
+    cursor: pointer;
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+  p:last-of-type {
+    display: inline;
+    padding-left: 0.1em;
+    color: #BEAD8E;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+  }
+ }
+
 .aboutHeader {
     background: #333333;
     color: #ffffff;
@@ -119,23 +189,7 @@ a {
       width: 6em; }
     .header__title--mod2 {
       padding-top: 0.2em; }
-    .header__title--smaller {
-      font-weight: 500;
-      width: 100%;
-      letter-spacing: 0.1em;
-      padding-top: 4em; }
-  .header__options {
-    align-self: flex-end;
-    background: white;
-    width: 7em;
-    margin-right: 1em;
-    font-family: 'Archivo';
-    font-weight: 600;
-    padding-left: 1.6em;
-    padding-right: 1.2em;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    text-align: center; }
+  
     .header__options--bigger {
       width: 10em; }
     .header__options p:first-child {
@@ -666,44 +720,83 @@ a {
 .roomList {
   background: #ffffff;
   padding-top: 2em; }
-  .roomList__container {
+  .roomList-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2em; }
-    .roomList__container p:nth-child(2) {
-      display: inline-block;
-      font-family: 'Roboto';
-      font-weight: 700;
-      color: #BDBDBD;
-      padding-left: 0.6em; }
-    .roomList__container img {
+    padding-bottom: 2em;
+    img {
       width: 21em;
       height: 15em;
-      display: block; }
+      display: block; } 
+    }
+    p:first-of-type {
+      font-family: 'Old Standard TT';
+      font-size: 1.5em;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0.5em;
+      margin-top: 0;
+    }
+    p:last-of-type {
+      font-family: 'Roboto';
+      font-size: 0.8em;
+      color: #777777;
+      width: 64%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
+  .roomList-bookNow {
+  p:first-of-type {
+    font-family: 'Archivo';
+    color: #BEAD8E;
+    font-weight: 600;
+    margin-top: 0;
+    display: inline;
+    font-size: 1em; }
+  p:last-of-type {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #BDBDBD;
+    padding-left: 0.6em;
+    width: 83px; }
+  }
+  .roomList-pagination {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Oswald';
+    font-size: 0.875em;
+    font-weight: 700;
+    color: #222222;
+    p {
+      cursor: pointer;
+      width: auto;
+      margin: 0;
+      font-size: 16px;
+      font-family: 'Oswald';
+      color: black; } 
+    }
+
+
     .roomList__container--mod {
       padding-top: 0;
       padding-bottom: 0.8em;
       margin-left: 1em;
       margin-right: 1em;
       background: #ffffff; }
-  .roomList__icons {
+  .roomList-icons {
+    display: flex;
     background: #ffffff;
     padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     padding-top: 0.8em;
-    transform: translateY(-14px); }
-    .roomList__icons svg {
-      padding-right: 0.3em; }
-  .roomList__pagination {
-      display: flex;
-      justify-content: space-evenly;
-      font-family: 'Oswald';
-      font-size: 0.875em;
-      font-weight: 700; }
-    .roomList__pagination p {
-      cursor: pointer; }
+    transform: translateY(-14px);
+    img {
+      width: 16px;
+      height: 16px;
+      padding-right: 0.3em; } }
 
 @media only screen and (min-width: 1000px) {
   .roomList {

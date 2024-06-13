@@ -98,148 +98,25 @@
             <h1>Hand Picked Rooms</h1>
             <div class="swiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/>  
+                    @foreach ($rooms as $room)
+                        <div class="swiper-slide">
+                            <div class="swiper-icons">
+                                <img src="../src/icons/bedIcon.png"/>
+                                <img src="../src/icons/wifIcon.png"/>
+                                <img src="../src/icons/carIcon.png"/>  
+                                <img src="../src/icons/flake.png"/>    
+                                <img src="../src/icons/gym.png"/>    
+                                <img src="../src/icons/nosmoke.png"/>    
+                                <img src="../src/icons/cocktail.png"/>  
+                            </div>
+                            <img src="./src/images/room1.jpg"/>
+                            <div class="aboutUs-rooms-pricing">
+                                <p>{{$room['room_type']}}</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <p>{{$room['room_rate']}}/Night</p>
+                            </div>
                         </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="swiper1 swiper1--desktop">
-                <div class="swiper-wrapper swiper-wrapper--mod">
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room2.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-icons">
-                            <img src="../src/icons/bedIcon.png"/>
-                            <img src="../src/icons/wifIcon.png"/>
-                            <img src="../src/icons/carIcon.png"/>  
-                            <img src="../src/icons/flake.png"/>    
-                            <img src="../src/icons/gym.png"/>    
-                            <img src="../src/icons/nosmoke.png"/>    
-                            <img src="../src/icons/cocktail.png"/> 
-                        </div>
-                        <img src="./src/images/room1.jpg"/>
-                        <div class="aboutUs-rooms-pricing">
-                            <p>Minimal Duplex Room</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>$345/Night</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
