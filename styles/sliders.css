@@ -32,13 +32,16 @@
       margin-bottom: 0 !important;
       text-align: left !important; }
     .swiper-mobile-description {
-      font-family: 'Archivo';
-      font-size: 0.875em;
-      color: #777777;
-      text-align: left;
-      line-height: 2em;
-      width: 62%;
-      padding-left: 2.8em; }
+      font-family: 'Archivo' !important;
+      font-size: 0.875em !important;
+      color: #777777 !important;
+      text-align: left !important;
+      line-height: 2em !important;
+      width: 62% !important;
+      padding-left: 2.8em !important;
+      padding-bottom: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
   .swiper-icons {
     display: flex;
     gap: 1em;
@@ -87,38 +90,32 @@
     --swiper-navigation-size: 15px !important; }
   
 @media only screen and (min-width: 1000px) {
-    .swiper1 {
-      display: none !important; }
-    .swiper1--desktop {
-      display: block !important;
-    }
-    .swiper--mobile {
-      display: none !important;}
-    .swiper-icons {
-      width: 50% !important;
-    }
-    .swiper--about {
-      display: none !important;}
-    .swiper-slide div {
-      display: none; }
-    .swiper-button-next, .swiper-button-prev {
-      top: var(--swiper-navigation-top-offset, 185%) !important; }
-    .swiper-slide-active {
-      transform: translateY(-36px) !important;
-      left: 0 !important; }
-      .swiper-slide-active div {
-        max-width: 22em;
-        display: block !important;}
-    .swiper--funfacts {
-      display: none !important;}
-    .slogan {
-      display: block; }
-    .swiper-button-prev--menu {
-      left: var(--swiper-navigation-sides-offset, 932px) !important;
-      top: var(--swiper-navigation-top-offset, 3%) !important; }
-    .swiper-button-next--menu {
-      right: var(--swiper-navigation-sides-offset, 20px) !important;
-      top: var(--swiper-navigation-top-offset, 3%) !important; } }
+  .swiper--mobile {
+    display: none !important;}
+  .swiper-icons {
+    width: 50% !important; }
+  .swiper--about {
+    display: none !important;}
+  .swiper-slide div {
+    display: none; }
+  .swiper-button-next, .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, 138%) !important; }
+  .swiper-slide-active {
+    transform: translateY(-36px) !important;
+    left: 0 !important; }
+    .swiper-slide-active div {
+      max-width: 22em;
+      display: block !important;}
+  .swiper--funfacts {
+    display: none !important;}
+  .slogan {
+    display: block; }
+  .swiper-button-prev--menu {
+    left: var(--swiper-navigation-sides-offset, 932px) !important;
+    top: var(--swiper-navigation-top-offset, 3%) !important; }
+  .swiper-button-next--menu {
+    right: var(--swiper-navigation-sides-offset, 20px) !important;
+    top: var(--swiper-navigation-top-offset, 3%) !important; } }
 
 @media only screen and (min-width: 1000px) {
     .swiper--menu {

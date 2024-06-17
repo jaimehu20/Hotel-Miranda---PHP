@@ -9,12 +9,6 @@ const roomSwiper = new Swiper('.swiper1', {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-      breakpoint: {
-        700: {
-          slidesPerView: 2,
-          slidesCentered: true
-        }
       }
     });
 
