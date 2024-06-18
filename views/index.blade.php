@@ -58,15 +58,14 @@
             <button class="header-button header-button--mod">LEARN MORE</button>
     </header>
     <section class="dates">
-        <div>
-            <p class="dates-text">Arrival Date</p>
-            <input class="dates-selector" type="date">
-        </div>
-        <div>
-            <p class="dates-text">Departure Date</p>
-            <input class="dates-selector dates-selector--mod" type="date">
-        </div>
-        <button class="dates-button">CHECK AVAILABILITY</button>
+        <form action="./index.php" method="POST">
+            <label for="arrival" class="dates-text">Arrival Date</label>
+            <input type="date" name="arrival" id="arrival" class="dates-selector" type="date">
+            <label for="departure" class="dates-text">Departure Date</label>
+            <input type="date" name="departure" id="departure" class="dates-selector dates-selector--mod" type="date">
+            <button type="submit" class="dates-button">CHECK AVAILABILITY</button>
+        </form>
+        
     </section>
     <section class="aboutUs">
         <div class="aboutUs-container">
