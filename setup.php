@@ -10,7 +10,7 @@ function dbConnection(){
     $host = 'localhost';
     $username = 'root';
     $password = 'jaime123';
-    $database = 'hotelmiranda';
+    $database = 'hotelmirandadashboard';
     $port = 3306;
 
     $connection = new mysqli($host, $username, $password, $database, $port); 

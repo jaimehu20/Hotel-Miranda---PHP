@@ -1,6 +1,5 @@
 <?php
-require_once('./setup.php');
-require_once('./getRooms.php');
+require_once('./queries/getRooms.php');
 
 echo $blade->run("rooms", ["rooms" => $rooms]);
 

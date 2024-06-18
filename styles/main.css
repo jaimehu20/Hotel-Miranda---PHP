@@ -232,6 +232,32 @@ a {
       border: 2px solid #FFFFFF54;
       margin-top: 1.8em; }
 
+.roomDetailsHeader {
+  background: #333333;
+  color: #ffffff;
+  padding-bottom: 3em;
+  margin-bottom: 0;
+  p:nth-child(1){
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    letter-spacing: 0.1em;
+    padding-left: 1em;
+    padding-top: 4em;
+    margin: 0;
+  }
+  p:nth-child(2) {
+    font-family: 'Old Standard TT' !important;
+    font-weight: 100 !important;
+    font-size: 3.5em !important;
+    padding-left: 0.3em !important;
+    padding-bottom: 0.7em !important;
+    width: 6em !important;
+    padding-top: 0.2em !important;
+    margin: 0 !important;
+    color: #ffffff;  }
+}
 @media only screen and (min-width: 1000px) {
   .header {
     padding-left: 11em;

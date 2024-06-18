@@ -64,7 +64,9 @@
     <section class="roomList">
         @foreach ($rooms as $room)
             <div class="roomList-container">
-                <img src="./src/images/room3.jpg"/>
+                <a href="roomDetails.php?room={{ $room['_id'] }}">
+                    <img src="./src/images/room3.jpg"/>
+                </a>
                 <div class="roomList-icons">
                     <img src="../src/icons/bedIcon.png"/>
                     <img src="../src/icons/wifIcon.png"/>
