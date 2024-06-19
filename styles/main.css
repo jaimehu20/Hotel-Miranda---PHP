@@ -286,7 +286,10 @@ a {
   background: #222222;
   color: #ffffff;
   font-family: 'Roboto';
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  form {
+    display: inline-grid;
+  } }
   .dates-text {
     margin-top: 0 !important;
     padding-top: 2em !important;

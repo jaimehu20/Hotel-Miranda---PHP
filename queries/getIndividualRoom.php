@@ -4,9 +4,9 @@ $mysqli = dbConnection();
 
 $roomId = (int) ($_GET['room'] ?? null);
 
-$query_individualRoom = "SELECT * FROM rooms r JOIN room_amenities ra ON r._id = ra.room_id JOIN amenities a ON a.id = ra.amenity_id WHERE r._id = $roomId";
+$query = "SELECT * FROM rooms r JOIN room_amenities ra ON r._id = ra.room_id JOIN amenities a ON a.id = ra.amenity_id WHERE r._id = $roomId";
 
-$request = $mysqli->query($query_individualRoom);
+$request = $mysqli->query($query);
 
 $roomDetails = [];
 $amenities = [];

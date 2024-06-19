@@ -2,8 +2,8 @@
 require_once('setup.php');
 $mysqli = dbConnection();
 
-$sql = "SELECT * FROM rooms";
-$request = $mysqli->query($sql);
+$query = "SELECT * FROM rooms";
+$request = $mysqli->query($query);
 
 $rooms = array();
 
