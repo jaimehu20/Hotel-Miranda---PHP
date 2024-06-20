@@ -161,14 +161,19 @@ a {
     padding: 0;
     letter-spacing: 0;
     font-size: 16px;
+    letter-spacing: 0 !important;
+    padding-left: 0 !important;
   }
   p:last-of-type {
+    font-size: 16px !important;
     display: inline;
     padding-left: 0.1em;
     color: #BEAD8E;
     cursor: pointer;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 700 !important;
+    font-family: 'Archivo' !important;
+    color: #BEAD8E !important;
   }
  }
 
@@ -177,17 +182,40 @@ a {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    p:nth-child(1) {
+      font-family: 'Archivo';
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      padding-left: 1em;
+      padding-top: 4em;
+      margin: 0;
+    }
+    p:nth-child(2){
+      font-family: 'Old Standard TT';
+      font-weight: 100;
+      font-size: 3.5em;
+      padding-left: 0.3em;
+      padding-bottom: 0.7em;
+      margin: 0;
+      width: 6em;
+      color: #ffffff;
+    } }
+
   .header--marginLess {
     margin-bottom: 0; }
-  .header-title {
-    margin: 0;
-    padding-top: 3em !important;
-    padding-left: 1em;
-    font-family: 'Archivo' !important;
-    font-weight: 700;
-    font-size: 16px !important;
-    width: 12em; }
+
+.header-title {
+  margin: 0;
+  padding-top: 3em !important;
+  padding-left: 1em;
+  font-family: 'Archivo' !important;
+  font-weight: 700;
+  font-size: 16px !important;
+  width: 12em; }
+
+
     .header-title--index {
       font-family: "Old Standard TT" !important;
       font-weight: 100;
@@ -232,32 +260,6 @@ a {
       border: 2px solid #FFFFFF54;
       margin-top: 1.8em; }
 
-.roomDetailsHeader {
-  background: #333333;
-  color: #ffffff;
-  padding-bottom: 3em;
-  margin-bottom: 0;
-  p:nth-child(1){
-    font-family: 'Archivo';
-    font-weight: 500;
-    font-size: 16px;
-    width: 100%;
-    letter-spacing: 0.1em;
-    padding-left: 1em;
-    padding-top: 4em;
-    margin: 0;
-  }
-  p:nth-child(2) {
-    font-family: 'Old Standard TT' !important;
-    font-weight: 100 !important;
-    font-size: 3.5em !important;
-    padding-left: 0.3em !important;
-    padding-bottom: 0.7em !important;
-    width: 6em !important;
-    padding-top: 0.2em !important;
-    margin: 0 !important;
-    color: #ffffff;  }
-}
 @media only screen and (min-width: 1000px) {
   .header {
     padding-left: 11em;
@@ -279,7 +281,19 @@ a {
       padding-right: 2em;
       padding-left: 2em; }
     .header-options {
-      margin-right: 9em; } }
+      margin-right: 9em; }
+    p:nth-child(1){
+      all: initial;
+      display: inline;
+      color: black;
+      cursor: pointer;
+    }
+    p:nth-child(2){
+      display: inline;
+      padding-left: 0.1em;
+      color: #BEAD8E;
+      cursor: pointer;
+    } }
 
 /* DATES SELECTOR */
 .dates {
@@ -330,7 +344,10 @@ a {
     padding-top: 1.8em;
     padding-bottom: 2.5em;
     justify-content: center;
-    font-weight: 700; }
+    font-weight: 700;
+    form {
+      display: block;
+    } }
     .dates-text {
       padding-top: 0; }
     .dates-selector {
@@ -626,11 +643,13 @@ a {
     height: 13em;
     max-width: 35em;
     object-fit: cover; }
-  .services__description {
-    font-family: 'Old Standard TT';
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 1em; }
+  .services p {
+    font-family: 'Old Standard TT' !important;
+    font-size: 2em !important;
+    text-align: center !important;
+    padding-bottom: 1em !important;
+    color: black !important;
+    width: auto !important; }
     .services__description--mod {
       margin-top: 0;
       text-align: left;
@@ -645,21 +664,31 @@ a {
     .services__description--paddingAdd {
       padding-left: 0.4em;
       align-self: flex-start; }
-  .services svg {
+  .services img {
     width: 5em; }
-  .services__icons {
+  .services-icons {
     display: flex;
     justify-content: space-evenly; }
-    .services__icons div {
+    .services-icons div {
       display: flex;
       flex-direction: column;
       align-items: center; }
-    .services__icons p {
-      font-family: 'Archivo';
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      font-size: 0.75em;
-      transform: translateY(-20px); }
+    .city {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .city p {
+      font-family: 'Archivo' !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.15em !important;
+      font-size: 0.75em !important;
+      transform: translateY(19px) !important;
+    }
+    .services-icons p {
+      font-family: 'Archivo' !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.15em !important;
+      font-size: 0.75em !important; }
   .services div:last-of-type div:nth-child(2) {
     display: none; }
 
@@ -696,14 +725,52 @@ a {
     margin-bottom: 1em;
     margin: 0 auto;
     object-fit: cover; }
-  .restaurant__description {
+  .restaurant p:nth-child(1){
+    padding-bottom: 1em;
+    letter-spacing: 0.175em;
+    font-size: 0.875em;
+    font-weight: 700;
+    font-family: 'Archivo';
+    color: #777777;
+    text-align: left;
+    padding-left: 3.5em;
+    margin-bottom: 0;
+    padding-top: 2em;
+  }
+  .restaurant p:nth-child(2){
+    font-family: 'Old Standard TT';
+    margin-top: 0;
+    text-align: left;
+    padding-left: 1em;
+    width: 8em;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .restaurant p:nth-child(3){
     font-family: 'Archivo';
     font-size: 0.875em;
     color: #777777;
     text-align: left;
     padding-left: 3em;
+    padding-top: 1em;
+    margin: 0;
     width: 19em;
     line-height: 1.8em; }
+  .restaurant button {
+    background: #BEAD8E;
+    color: #ffffff;
+    font-family: 'Archivo';
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    padding: 1.5em;
+    margin-bottom: 4em;
+    margin-left: 3em;
+    border: none;
+    max-width: 20em;
+    cursor: pointer;
+    width: 60%;
+  }
 
 @media only screen and (min-width: 1000px) {
   .restaurant {
@@ -724,14 +791,60 @@ a {
 .funFacts {
   padding-top: 2em;
   background: #ffffff; }
+  .funFacts p:nth-child(1) {
+    padding-bottom: 1em;
+    letter-spacing: 0.175em;
+    font-size: 0.875em;
+    font-weight: 700;
+    font-family: 'Archivo';
+    color: #777777;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    text-align: left;
+    width: auto;
+  }
   .funFacts h1 {
     font-family: 'Old Standard TT';
     font-weight: 100;
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 3em;
     width: 6em;
     padding-left: 0.3em; }
-  .funFacts__container {
+  .funFacts img {
+    display: block;
+    width: 6em;
+    height: 7em;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding-left: 1em; }
+  .funFacts-container img:last-child {
+    width: 2em;
+    height: auto;
+    padding-left: 0;
+    padding-right: 1em;
+  }
+  .funFacts-container p:nth-child(1) {
+    font-family: 'Old Standard TT';
+    font-size: 3.75em;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+  .funFacts-container p:nth-child(2) {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #777777;
+    margin-top: 0;
+    padding: 0;
+    width: auto;
+
+  }
+
+  .funFacts-container {
     display: flex;
     align-items: center;
     gap: 2em; }
@@ -747,12 +860,7 @@ a {
       font-family: 'Roboto';
       color: #777777;
       margin-top: 0; }
-  .funFacts img {
-    display: block;
-    width: 20em;
-    height: 14em;
-    margin: 0 auto;
-    margin-top: 3em; }
+  
 
 @media only screen and (min-width: 1000px) {
   .funFacts h1 {
@@ -778,40 +886,70 @@ a {
     img {
       width: 21em;
       height: 15em;
-      display: block; } 
-    }
+      display: block; } }
+    .roomList-container--popular img {
+      width: 90% !important; }
+    .roomList-container--popular p:first-of-type {
+      padding-bottom: 0.5em;
+      font-family: 'Old Standard TT';
+      font-size: 1.5em;
+      margin-bottom: 0;
+      padding-top: 42px;
+      margin-top: 0;
+      background: #ffffff;
+      width: 90%;
+      transform: translateY(-36px); }
+    .roomList-container--popular p:last-of-type {
+      font-family: 'Roboto';
+      font-size: 0.8em;
+      color: #777777;
+      background: #ffffff;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 20px;
+      transform: translateY(-36px); }
     p:first-of-type {
       font-family: 'Old Standard TT';
       font-size: 1.5em;
       margin-bottom: 0;
       padding-top: 0;
       padding-bottom: 0.5em;
-      margin-top: 0;
-    }
+      margin-top: 0; }
     p:last-of-type {
       font-family: 'Roboto';
       font-size: 0.8em;
       color: #777777;
       width: 64%;
       margin: 0 auto;
-      padding-bottom: 20px;
-    }
+      padding-bottom: 20px; }
   .roomList-bookNow {
-  p:first-of-type {
-    font-family: 'Archivo';
-    color: #BEAD8E;
-    font-weight: 600;
-    margin-top: 0;
-    display: inline;
-    font-size: 1em; }
-  p:last-of-type {
-    display: inline-block;
-    font-family: 'Roboto';
-    font-weight: 700;
-    color: #BDBDBD;
-    padding-left: 0.6em;
-    width: 83px; }
-  }
+    transform: translateY(-36px);
+    background: #ffffff;
+    width: 90%;
+    padding-bottom: 20px; }
+  .roomList-bookNow p:first-of-type {
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    margin-top: 0 !important;
+    font-family: 'Archivo' !important;
+    color: #BEAD8E !important;
+    display: inline !important;
+    font-size: 1em !important;
+    background: none !important; }
+  .roomList-bookNow p:last-of-type {
+    display: inline-block !important;
+    font-family: 'Roboto' !important;
+    font-weight: 700 !important;
+    color: #BDBDBD !important;
+    padding-left: 0.6em !important;
+    font-size: 16px !important;
+    transform: initial !important; }
+  .roomList-bookNow--rooms {
+    transform: initial !important;
+    width: 54%; }
+  .roomList-bookNow--rooms p:last-of-type {
+    width: auto; }
   .roomList-pagination {
     display: flex;
     justify-content: space-evenly;
@@ -825,9 +963,7 @@ a {
       margin: 0;
       font-size: 16px;
       font-family: 'Oswald';
-      color: black; } 
-    }
-
+      color: black; } }
 
     .roomList__container--mod {
       padding-top: 0;
@@ -843,9 +979,10 @@ a {
     padding-right: 1.5em;
     padding-top: 0.8em;
     transform: translateY(-14px);
+    z-index: 1;
     img {
-      width: 16px;
-      height: 16px;
+      width: 16px !important;
+      height: 16px !important;
       padding-right: 0.3em; } }
 
 @media only screen and (min-width: 1000px) {
@@ -860,35 +997,96 @@ a {
 
 /* ROOM DETAILS */
 .roomDetails {
-  padding-left: 1em; }
+  padding-left: 1em;
+  background: #ffffff; }
   .roomDetails img {
     width: 21em; }
+  .roomDetails p:nth-child(1) {
+    padding-bottom: 1em;
+    letter-spacing: 0.175em;
+    font-size: 0.875em;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Archivo';
+    color: #777777;
+    margin-bottom: 0;
+    padding-top: 1em;
+    text-align: left;
+    padding-left: 1em; }
+  .roomDetails p:nth-child(2) {
+    font-family: 'Old Standard TT';
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+    width: auto;
+    padding-left: 0; }
+  .roomDetails p:nth-child(3) {
+    font-family: 'Archivo';
+    color: #BEAD8E;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 0;
+    padding-top: 0.5em;
+    width: auto; }
+
 .availability {
   text-align: center;
-  padding-top: 2em; }
+  padding-top: 2em;
+  background: #ffffff; }
   .availability h2 {
     font-family: 'Archivo';
     font-weight: 700;
     font-size: 1.125em;
     color: #222222;
     padding-bottom: 1em; }
-  .availability__check {
-    margin-left: 3em;
+  .availability input {
+    background: #F2F2F2;
+    border: none;
+    font-family: 'Archivo';
+    font-weight: 400;
+    color: #777777;
+    padding: 1em;
+    margin-bottom: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+  .availability form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Archivo';
+    width: 90%;
+    margin: 0 auto; }
+  .availability label {
     text-align: left;
+    padding-bottom: 10px; }
+  .availability textarea {
+    background: #F2F2F2;
+    border: none;
+    font-family: 'Archivo';
+    font-weight: 400;
+    color: #777777;
+    padding: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    height: 140px; }
+  .availability button {
+    border: none;
+    cursor: pointer;
+    background: #BEAD8E;
+    color: #ffffff;
     font-family: 'Archivo';
     font-weight: 700;
-    font-size: 0.875em; }
-    .availability__check input {
-      background: #F2F2F2;
-      border: none;
-      font-family: 'Archivo';
-      font-weight: 400;
-      color: #777777;
-      padding: 1em;
-      width: 80%; }
+    letter-spacing: 0.3em;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-left: 0; }
 
 .amenities {
-  text-align: center; }
+  text-align: center;
+  background: #ffffff;
+  padding-top: 1px; }
   .amenities h2 {
     font-family: 'Old Standard TT';
     font-weight: 400;
@@ -896,10 +1094,11 @@ a {
     padding-left: 1em;
     text-align: left; }
   .amenities div p {
-    display: inline; }
+    display: inline;
+    font-size: 14px; }
   .amenities__list--center {
     text-align: center; }
-  .amenities__list__1 {
+  .amenities-list {
     display: inline-block;
     text-align: left;
     padding-right: 1em;
@@ -907,18 +1106,17 @@ a {
     font-size: 0.9375em;
     font-weight: 500;
     color: #777777; }
-    .amenities__list__1 div {
+    .amenities-list div {
       padding-bottom: 0.8em; }
-      .amenities__list__1 div p {
-        display: inline-block; }
-    .amenities__list__1 svg {
-      padding-right: 0.2em; }
+    .amenities-list img {
+      padding-right: 0.8em; }
 
 .founder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4em; }
+  padding-top: 4em;
+  background: #ffffff; }
   .founder img {
     border-radius: 50%;
     width: 42%;
@@ -933,12 +1131,12 @@ a {
     bottom: 12em;
     left: 4.5em;
     border: 3px solid #ffffff; }
-  .founder__name {
+  .founder p:nth-child(1) {
     font-family: 'Old Standard TT';
     font-size: 1.875em;
     margin-top: 0;
     margin-bottom: 0; }
-  .founder__carreer {
+  .founder-carreer {
     font-family: 'Archivo';
     font-weight: 700;
     font-size: 0.875em;
@@ -946,10 +1144,19 @@ a {
     color: #BEAD8E;
     padding-top: 0.2em;
     margin-top: 0; }
+  .founder p:last-of-type {
+    width: 78%;
+    padding-bottom: 1.5em;
+    margin: 0 auto;
+    color: #777777;
+    font-family: 'Roboto';
+    font-size: 1em;
+    text-align: center; }
 
 .cancellationTerms {
   padding-top: 3em;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  background: #ffffff; }
   .cancellationTerms h2 {
     font-family: 'Old Standard TT';
     font-weight: 400;
@@ -957,7 +1164,23 @@ a {
     padding-left: 1em;
     text-align: left;
     margin-bottom: 0; }
+  .cancellationTerms p {
+    padding-bottom: 1.5em;
+    margin: 0 auto;
+    color: #777777;
+    font-family: 'Roboto';
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-top: 1em;
+    width: 84%;
+    font-size: 1em; }
 
+.relatedRooms {
+  background: #ffffff;
+  padding-top: 1px;
+}
 .relatedRooms h2 {
   font-family: 'Old Standard TT';
   font-weight: 400;
@@ -974,60 +1197,138 @@ a {
 .offerList {
   background: #ffffff;
   padding-bottom: 2em; }
-  .offerList__offerContainer {
-    padding-top: 3em; }
-    .offerList__offerContainer__items {
+    .offerList-offerContainer {
       display: flex;
-      flex-direction: column; }
-      .offerList__offerContainer__items img {
+      flex-direction: column;
+      padding-top: 3em; }
+      .offerList-offerContainer img {
         display: block;
         margin: 0 auto;
         width: 20em;
         height: 11em; }
-      .offerList__offerContainer__items p {
-        display: inline-block; }
-      .offerList__offerContainer__items__before {
-        font-family: 'Old Standard TT';
+      .offerList-offerContainer div:nth-child(2) {
         color: #BEAD8E;
         font-weight: 700;
-        font-size: 1.4375em;
         position: relative;
         bottom: 4em;
         right: 2em;
         height: 0.1em;
         align-self: end; }
-      .offerList__offerContainer__items__after {
+      .offerList-offerContainer div:nth-child(2) p:nth-child(1) {
+        font-size: 1.4375em;
+        display: inline-block; }
+      .offerList-offerContainer div:nth-child(2) p:nth-child(2) {
         font-family: 'Old Standard TT';
+        font-weight: 700;
+        color: #BEAD8E;
+        display: inline; }
+      .offerList-offerContainer div:nth-child(3) {
         color: #DE5777;
         font-weight: 700;
-        font-size: 1.875em;
         position: relative;
         bottom: 2.3em;
-        height: 0.1em;
         right: 1em;
+        height: 0.1em;
         align-self: end; }
-      .offerList__offerContainer__items__smaller {
-        align-self: center;
-        font-size: 0.62em;
-        display: inline; }
+      .offerList-offerContainer div:nth-child(3) p:nth-child(1) {
+        display: inline-block;
+        font-size: 1.875em; }
+      .offerList-offerContainer div:nth-child(3) p:nth-child(2) {
+        display: inline;
+        font-family: 'Old Standard TT';
+        color: #DE5777;
+        font-weight: 700; }
+      .offerList-offerContainer button {
+        border: none;
+        max-width: 20em;
+        cursor: pointer;
+        width: 60%;
+        background: #BEAD8E;
+        color: #ffffff;
+        font-family: 'Archivo';
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        padding: 1.5em;
+        margin-bottom: 4em;
+        margin-left: 3em; }
+      .offerList-offerContainer-bedtype {
+        padding-bottom: 1em !important;
+        letter-spacing: 0.175em !important;
+        font-size: 0.875em !important;
+        font-weight: 700 !important;
+        font-family: 'Archivo' !important;
+        color: #777777 !important;
+        margin-bottom: 0 !important;
+        padding-top: 1em !important;
+        text-align: left !important;
+        padding-left: 1.5em !important; }
+      .offerList-offerContainer-beddetails {
+        font-family: 'Old Standard TT';
+        width: 8em;
+        font-size: 2.5em;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: left;
+        padding-left: 0.4em; }
+      .offerList-offerContainer-description {
+        padding-bottom: 3.5em !important;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 0.875em;
+        line-height: 1.5em;
+        margin-left: 0;
+        padding-left: 1.5em;
+        padding-top: 1em;
+        width: 86% !important;
+        margin: 0 !important; }
+      .offerList-offerContainer-amenities {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        text-align: center; }
+      .offerList-offerContainer-amenities div {
+        text-align: left !important;
+        padding-right: 1em !important;
+        padding-bottom: 30px !important;
+        font-family: 'Roboto' !important;
+        font-size: 0.9375em !important;
+        font-weight: 500 !important;
+        color: #777777 !important;
+        position: static !important;
+        height: auto !important; }
+      .offerList-offerContainer-amenities p {
+        display: inline !important;
+        padding-left: 10px !important;
+        font-family: 'Roboto' !important;
+        font-size: 0.9375em !important;
+        font-weight: 500 !important;
+        color: #777777 !important; }
+      .offerList-offerContainer-amenities img {
+        display: inline;
+        width: auto;
+        height: auto;
+        margin: 0; }
+
 
 .popularRooms {
   background: #222222;
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em; }
-  .popularRooms__title {
+  padding-top: 2em; }
+  .popularRooms p:nth-child(1) {
     font-family: 'Archivo';
     font-weight: 500;
     letter-spacing: 0.175em;
-    color: #BDAC8D; }
-  .popularRooms__mainTitle {
+    color: #BDAC8D;
+    font-size: 16px; }
+  .popularRooms p:nth-child(2) {
     font-family: 'Old Standard TT';
     font-size: 2.5em;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 1em;
-    color: #ffffff; }
+    color: #ffffff;
+    width: auto; }
   .popularRooms img {
     width: 100%; }
 
@@ -1123,7 +1424,46 @@ a {
   padding-top: 3em;
   padding-bottom: 8em;
   background: #ffffff; }
-
+.formData h1 {
+  font-family: 'Archivo';
+  font-weight: 700;
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0.1em;
+  color: #2222220A;
+  position: absolute; }
+.formData h1:nth-child(1) {
+  left: 1em;
+  bottom: 1.3em; }
+.formData h1:nth-child(2) {
+  top: 2.8em;
+  left: 1em; }
+.formData h1:nth-child(3) {
+  top: 4em;
+  left: 1em; }
+.formData-info {
+  padding-left: 1em;
+  padding-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 7em; }
+.formData-info div div:nth-child(2) {
+  display: inline-block; }
+.formData-info p:first-of-type {
+  font-family: 'Old Standard TT' !important;
+  font-size: 1.2em !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important; }
+.formData-info p:last-of-type {
+  font-family: 'Roboto' !important;
+  font-size: 0.8em !important;
+  margin-top: 0 !important;
+  color: #777777 !important;
+  width: auto !important; }
+.formData-info img {
+  width: 40px;
+  padding-right: 20px; }
 .formSection {
   background: #ffffff;
   text-align: center; }
@@ -1148,10 +1488,23 @@ a {
     text-align: left;
     width: 80%;
     margin: 0 auto;
-    font-family: 'Archivo';}
+    font-family: 'Archivo';
+    padding-bottom: 10px; }
     .formSection form {
-      margin-bottom: 0;
-    }
+      margin-bottom: 0; }
+    .formSection form button {
+      border: none;
+      max-width: 20em;
+      cursor: pointer;
+      width: 60%;
+      background: #BEAD8E;
+      color: #ffffff;
+      font-family: 'Archivo';
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      padding: 1.5em;
+      margin-bottom: 4em;
+      margin-left: 0; }
 
 @media only screen and (min-width: 1000px){
   .formData {
@@ -1286,9 +1639,6 @@ a {
   padding-bottom: 3em;
   text-align: center;
   background: #ffffff; }
-  .features--dark {
-    background: #222222;
-    padding-bottom: 3em; }
   .features p:first-child {
     font-family: 'Archivo';
     font-weight: 600;
@@ -1297,8 +1647,6 @@ a {
     letter-spacing: 0.2em;
     padding-top: 2.5em;
     padding-bottom: 20px; }
-    .features__title--dark {
-      color: #ffffff; }
   .features p:nth-child(2) {
     font-family: 'Old Standard TT';
     font-weight: 100;
@@ -1308,20 +1656,20 @@ a {
     text-align: center;
     width: auto;
     color: black; }
-    .features__mainTitle--dark {
-      color: #ffffff; }
+  .features--dark {
+    background: #222222;
+    padding-bottom: 3em; }
+    .features--dark p {
+      color: #ffffff !important; }
   .features-container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .features__container--dark {
-      background: #292929;
-      margin-top: 2em; }
     .features-container img {
       padding-left: 2em;
       align-self: end;
-      width: 6em;
-      height: 8em;
+      width: 6em !important;
+      height: 8em !important;
       padding-top: 5em; }
     .features-container h1 {
       font-family: 'Archivo';
@@ -1331,6 +1679,17 @@ a {
       margin-bottom: 0;
       padding-right: 0.1em;
       color: #2222220A; }
+    .features-container--dark {
+      background: #292929;
+      margin-top: 2em; }
+    .features-container--dark img {
+      width: 6em !important;
+      height: 8em !important;
+      padding-top: 4em;
+    }
+    .features-container--dark h1 {
+      color: #222222;
+    }
       .features__container__number--light {
         color: #2222220A; }
       .features__container__number--dark {
@@ -1417,6 +1776,15 @@ a {
   .menu img:first-of-type {
     align-self: flex-end;
     width: 6em; }
+  .menu-main {
+    padding-left: 1.2em !important;
+    padding-bottom: 1em !important;
+    letter-spacing: 0.175em !important;
+    font-size: 0.875em !important;
+    font-weight: 700 !important;
+    font-family: 'Archivo' !important;
+    color: #777777 !important;
+  }
   .menu-title {
     font-family: 'Old Standard TT' !important;
     font-weight: 100 !important;
@@ -1429,7 +1797,8 @@ a {
     color: black !important; }
   .menu-table {
     display: grid;
-    grid-template-columns: auto auto; }
+    grid-template-columns: auto auto;
+    overflow: hidden; }
     .menu-table--2 {
       display: none; }
     .menu-table--3 {
@@ -1460,7 +1829,14 @@ a {
     height: 300px;
     width: auto !important;} 
 
-
+@media only screen and (min-width: 1000px) {
+  .menu-main {
+    text-align: center;
+  }
+  .menu-food {
+    display: none;
+  }
+}
 .achievements {
   background: #ffffff;
   text-align: center;
@@ -1495,7 +1871,7 @@ a {
   .achievements {
     display: flex;
     justify-content: space-around; }
-    .achievements__container {
+    .achievements-container {
       display: flex;
       padding-left: 4%;
       padding-right: 4%;

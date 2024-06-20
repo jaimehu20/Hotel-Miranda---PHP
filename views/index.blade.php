@@ -95,7 +95,7 @@
         <div class="aboutUs-rooms">
             <h2>ROOMS</h2>
             <h1>Hand Picked Rooms</h1>
-            <div class="swiper1">
+            <div class="swiper">
                 <div class="swiper-wrapper">
                     @foreach ($rooms as $room)
                         <div class="swiper-slide">
@@ -252,7 +252,7 @@
     </section>
     <section class="menu">
         <img src="../src/icons/donut.png"/>
-        <p class="aboutUs-title">MENU</p>
+        <p class="menu-main">MENU</p>
         <p class="menu-title">Our Foods Menu</p>
         <div class="swiper swiper--menu">
             <div class="swiper-wrapper">

@@ -1,4 +1,4 @@
-const roomSwiper = new Swiper('.swiper1', {
+const roomSwiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
     // If we need pagination
@@ -58,13 +58,6 @@ const aboutSwiper = new Swiper('.swiper--about', {
 });
 
 const funfactsSwiper = new Swiper('.swiper--funfacts', {
-  // Optional parameters
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
 });
 
 
